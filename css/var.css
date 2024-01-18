@@ -5,8 +5,10 @@
 }
 
 :root {
+  --color-light-blue: #ebf4fb;
   --color-sky-blue: #B6EFFF;
   --color-blue: #567FF2;
+  --color-light-beige: #fcf3e8;
   --color-light-green: #b2e7c9;
   --color-bright-green: #30C690;
   --color-light-violet: #efe0f5;
