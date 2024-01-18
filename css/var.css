@@ -5,7 +5,14 @@
 }
 
 :root {
-  --color-green: #94c500;
+  --color-light-blue: #ebf4fb;
+  --color-sky-blue: #B6EFFF;
+  --color-blue: #567FF2;
+  --color-light-beige: #fcf3e8;
+  --color-light-green: #b2e7c9;
+  --color-bright-green: #30C690;
+  --color-light-violet: #efe0f5;
+  --color-bright-violet: #5E0D84;
   --space-side-default: 16px;
   --space-upside-default: 32px;
   --space-side-mobile: 8px;
