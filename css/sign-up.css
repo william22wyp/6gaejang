@@ -1,0 +1,52 @@
+li, h3{
+  text-align: center;
+}
+.name{
+  float: left;
+  padding: 10px 10px 10px 300px;
+  margin: 10px;
+}
+.ename{
+  float: left;
+  padding: 10px 300px 10px 10px;
+  margin: 10px;
+}
+.robot{
+  border: 1px solid;
+  padding: 10px 100px 10px 100px;
+  width: 150px;
+  font-size: large;
+  /* display: grid;
+  grid-template-columns: 400px; */
+}
+
+.sign-up{
+  background-color: aquamarine;
+  text-align: center;
+  width: 150px;
+  height: 50px
+  
+}
+input[type="checkbox"]{
+
+  width: 20px;
+  height: 20px;
+}
+.phone{
+  padding: 40px;
+  margin: 20px;
+  display: grid;
+}
+.usre-name{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+img{
+  object-fit: cover;
+}
+.border{
+  width: 0px;
+}
+.login{
+  text-align-last: center;
+}
