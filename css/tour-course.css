@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+main {
+  float: left;
+  width: 80%;
+}
+
+/* 메인화면 */
+.container {
+  width: 80%;
+  margin: 50px auto;
+  /* background-color: #eee; */
+}
+
+.container__title {
+  margin: 20px;
+  height: 40px;
+  font-size: 30px;
+  /* border: 1px solid; */
+}
+
+/* 테마 */
+/* img+text flex-box */
+.content {
+  margin: 10px;
+  display: flex;
+  /* background-color: #aaa; */
+}
+
+.content__image {
+  width: 50%;
+}
+
+.content__text {
+  width: 50%;
+  padding: 20px;
+  border: 1px solid;
+}
+
+/* 숙소 */
+#rooms_info {
+  margin-top: 50px;
+}
+
+#rooms_list{
+  width: 100%;
+  height: 200px;
+  border: 1px solid;
+}
+
+#form_mobile {
+  display: none;
+}
+
+/* 예매창 */
+.rsv_container {
+  width: 20%;
+  height: 100%;
+  padding: 30px 40px;
+  float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #eee;
+  /* border: 1px solid; */
+}
+
+.rsv_container__title {
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+#rsv_container__form {
+  position: relative;
+}
+
+/* grid 사용 */
+.form__optionbox {
+  display: grid;
+  grid-template-rows: repeat(4, 60px);
+  font-size: 16px;
+}
+
+#form__course, #form__room {
+  margin: 10px 0;
+  padding: 5px;
+}
+
+#form__personnalbox, #form__datebox {
+  display: grid;
+  padding: 10px 0;
+  grid-template-columns: 1fr 2fr;
+}
+
+#form__personnalbox > label, #form__datebox > label {
+  grid-column: 1/2;
+  margin: 10px 0;
+}
+
+#form__personnalbox > input, #form__datebox > input {
+  padding: 10px;
+  grid-column: 2/4;
+  border: 1px solid;
+}
+
+.form__btnbox {
+  display: grid;
+  grid-template-rows: repeat(3, 60px);
+  font-size: 16px;
+}
+
+.rsv_container__form button {
+  color: black;
+  margin: 10px 0;
+  border: 1px solid black;
+  background-color: #94c500;
+}
+
+#form__rsv {
+  color: white;
+  font-weight: 900;
+  background-color: red;
+}
+
+@media screen and (max-width: 426px){
+  main {
+    width: 100%;
+    float: none;
+    /* background-color: #eee; */
+  }
+
+  .container {
+    width: 80%;
+    margin: 30px auto;
+    /* background-color: #eee; */
+  }
+
+  .container__title {
+    font-size: 20px;
+    margin: 10px;
+    height: 30px;
+  }
+
+  /* 테마 */
+  .content {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    /* background-color: #aaa; */
+  }
+  
+  .content__image {
+    margin: 0;
+    width: 100%;
+  }
+
+  .content__text {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid;
+  }
+
+  #rooms_info {
+    margin-top: 30px;
+  }
+
+  #rooms_list{
+    width: 100%;
+    height: 200px;
+    border: 1px solid;
+  }
+  
+  #form_mobile {
+    width: 100%;
+    display: block;
+  }
+
+  #btn_mobile {
+    position: fixed;
+    bottom: 50px;
+    right: 10%;
+    width: 30%;
+    height: 30px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #000;
+    background-color: #94c500;
+  }
+
+  /* 예매창 */
+  .rsv_container {
+    display: none;
+  }
+
+
+}

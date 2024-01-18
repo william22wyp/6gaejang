@@ -12,19 +12,21 @@ li, h3{
   margin: 10px;
 }
 .robot{
-  border: 1px solid;
-  padding: 10px 100px 10px 100px;
+  border: 1px solid ;
+  /* width: fit-content; */
+
+  /* padding: 10px 100px 25px 100px;
   width: 150px;
+  height: 50px; */
+  text-align: center;
   font-size: large;
-  /* display: grid;
-  grid-template-columns: 400px; */
 }
 
 .sign-up{
-  background-color: aquamarine;
-  text-align: center;
-  width: 150px;
-  height: 50px
+  text-align-last: center;
+  /* width: 150px; */
+  display: grid;
+  grid-template-columns: 1fr
   
 }
 input[type="checkbox"]{
@@ -50,3 +52,4 @@ img{
 .login{
   text-align-last: center;
 }
+

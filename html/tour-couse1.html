@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>육개장</title>
+  <link rel="stylesheet" href="../css/tour-course.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="https://kit.fontawesome.com/fccb424d55.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <body>
+    <iframe src="../html/header.html" frameborder="0" width="100%" height="72px"></iframe>
+    <main>
+      <div class="container">
+        <div id="tour_info">
+          <h1 class="container__title">테마명</h1>
+          <div class="content" id="place1">
+            <img class="content__image" src="../img/tour-course1/sample.jpg" alt="">
+            <div class="content__text">
+              <h3 class="text__title">장소명</h3>
+              <p class="text__detail">설명</p>
+            </div>
+          </div>
+          <div class="content" id="place1">
+            <img class="content__image" src="../img/tour-course1/sample.jpg" alt="">
+            <div class="content__text">
+              <h3 class="text__title">장소명</h3>
+              <p class="text__detail">설명</p>
+            </div>
+          </div>
+          <div class="content" id="place1">
+            <img class="content__image" src="../img/tour-course1/sample.jpg" alt="">
+            <div class="content__text">
+              <h3 class="text__title">장소명</h3>
+              <p class="text__detail">설명</p>
+            </div>
+          </div>
+        </div>
+        <div id="rooms_info">
+          <h1 class="container__title">숙소</h1>
+          <div id="rooms_list"></div>
+        </div>
+      </div>
+      <form action="./reserve.html" id="form_mobile">
+        <button type="submit" id="btn_mobile">예매하기</button>
+      </form>
+    </main>
+    <aside>
+      <div class="rsv_container">
+        <h2 class="rsv_container__title">예매하기</h2>
+        <form action="#" class="rsv_container__form">
+          <div class="form__optionbox">
+            <select name="rsv_course" id="form__course">
+              <option value="테마명1" selected>테마명1</option>
+              <option value="테마명2">테마명2</option>
+            </select>
+            <select name="rsv_room" id="form__room">
+              <option value="숙소명1" selected>숙소명1</option>
+              <option value="숙소명2">숙소명2</option>
+            </select>
+            <div id="form__personnalbox">
+              <label for="form__personnal">인원</label>
+              <input type="number" name="personnal" id="form__personnal">
+            </div>
+            <div id="form__datebox">
+              <label for="form__date">날짜</label>
+              <input type="date" name="date" id="form__date">
+            </div>
+          </div>
+          <div class="form__btnbox">
+            <button type="button" id="form__qna">문의하기</button>
+            <button type="button" id="form__like">찜하기</button>
+            <button type="submit" id="form__rsv">예약하기</button>
+          </div>
+          </fieldset>
+        </form>
+      </div>
+    </aside>
+    <iframe src="../html/footer.html" frameborder="0" width="100%" height="96px"></iframe>
+
+  </body>
+
+</html>
