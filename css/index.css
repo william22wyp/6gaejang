@@ -32,15 +32,15 @@ main {
   transition: 2s ease-in;
 }
 .container {
-  width: 800px;
-  height: 400px;
+  width: 700px;
+  height: 500px;
   display: grid;
   background-color:brown;
   grid-template-columns: repeat(3, 1fr);
 }
 
 .container:hover {
-  animation: name 4s ease-in-out infinite;
+  animation: name 6s ease-in-out infinite;
 }
 
 @keyframes name {
@@ -62,14 +62,42 @@ main {
 }
 #cosa {
   background-color:bisque;
-  background:url("../img/#date")
-
+  background:url("../img/tour-course1/place1.jpg");
+  background-position: left;
 }
 #cosb {
   background-color: blueviolet;
- 
+  background:url("../img/tour-course2/place2.jpg") no-repeat;
+  background-position: left;
+  background-size: cover;
 }
 #cosc {
   background-color:blue;
+  background: url("../img/tour-course3/place2.jpg") no-repeat;
+  background-size: cover;
+}
+.items h3{
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
 
+
+}
+.items p{
+  color: white;
+
+}
+.items{
+  display: flex;
+  align-items: center;
+
+}
+.items a{
+  height: 300px;
+  width: 100%;
+  background-color: rgb(1, 1, 1, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }

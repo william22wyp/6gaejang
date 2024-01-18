@@ -1,4 +1,4 @@
-@import "var.css";
+@import url(./var.css);
 
 .theme-container {
   margin: var(--space-upside-default) var(--space-side-default);
