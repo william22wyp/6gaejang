@@ -6,18 +6,10 @@
   text-decoration: none;
 }
 
-:root {
-  --color-green: #94c500;
-  --space-side-default: 16px;
-  --space-upside-default: 32px;
-  --space-side-mobile: 8px;
-  --font-size-mid: 24px;
-  --font-size-small: 16px;
-}
 
 /* header */
 .header-container {
-  background-color: var(--color-green);
+  background-color: var(--color-bright-violet);
   height: 72px;
   display: flex;
   align-items: center;
@@ -39,12 +31,12 @@ header {
 }
 
 .logo i {
-  color: #551a8b;
+  color: var(--color-light-green);
   margin-right: 8px;
 }
 
 .logo span {
-  color: #ffffff;
+  color: white;
   font-weight: 800;
 }
 
@@ -79,6 +71,9 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+.end span{
+  color: white;
+}
 
 @media screen and (max-width: 425px){
   .header-container {
@@ -96,10 +91,11 @@ header {
     width: 80%;
   }
   
+  
 }
 header .logo i:active{
-  color: #ffffff;
+  color: var(--color-light-violet);
 }
 header .end a:active{
-  color: #ffffff;
+  color:  black;
 }
