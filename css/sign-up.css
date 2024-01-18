@@ -52,4 +52,7 @@ img{
 .login{
   text-align-last: center;
 }
-
+.img-a{
+  object-fit: cover;
+  padding: 1px 1px 1px 100px;
+}
