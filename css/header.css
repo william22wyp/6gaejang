@@ -95,3 +95,9 @@ header {
   }
   
 }
+header .logo i:active{
+  color: #ffffff;
+}
+header .end a:active{
+  color: #ffffff;
+}
