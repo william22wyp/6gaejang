@@ -83,7 +83,7 @@ button {
   justify-content: flex-end;
 }
 .find-password {
-  color: #80924a;
+  color: var(--color-bright-green);
 }
 footer {
   background-color: #706c6c;
@@ -116,7 +116,7 @@ footer {
   bottom: 0;
 }
 ul input:not([type=radio]):hover{
-  border-color: rgb(8, 251, 48);
+  border-color: var(--color-light-green);
 }
 li input:checked +label {
   color: red;
@@ -126,8 +126,8 @@ li .find-password:hover{
   font-weight: bold;
 }
 div button:hover{
-  color: rgb(243, 11, 11);
+  color: red;
 }
 div .member:hover{
-  color: rgb(219, 15, 76);
+  color: red;
 }

@@ -7,18 +7,10 @@
   box-sizing: border-box;
 }
 
-:root {
-  --color-green: #94c500;
-  --space-side-default: 16px;
-  --space-upside-default: 32px;
-  --space-side-mobile: 8px;
-  --font-size-mid: 24px;
-  --font-size-small: 16px;
-}
 
 /* footer */
 footer {
-  background-color: #f2f2f2;
+  background-color: var(--color-light-beige);
   margin-top: var(--space-upside-default);
   height: 64px;
   display: flex;
