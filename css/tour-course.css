@@ -37,7 +37,7 @@ main {
   margin-bottom: 10px;  
   display: flex;
   flex-direction: row;
-  /* background-color: #aaa; */
+  background-color: var(--color-sky-blue);
 }
 
 .content__image {
