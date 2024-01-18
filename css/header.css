@@ -16,7 +16,7 @@
 }
 
 header {
-  font-size: var(--font-size-mid);
+  font-size: 12px;
 }
 
 .start,
@@ -77,10 +77,11 @@ header {
 
 @media screen and (max-width: 425px){
   .header-container {
-    font-size: var(--font-size-small);
+    font-size: 15px;
   }
 
   .start {
+    width: 30%;
     padding-left: var(--space-side-default);
   }
   .end {
