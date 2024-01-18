@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --color-green: #94c500;
+  --space-side-default: 16px;
+  --space-upside-default: 32px;
+  --space-side-mobile: 8px;
+  --font-size-mid: 24px;
+  --font-size-small: 16px;
+}
+
+/* footer */
+footer {
+  background-color: #f2f2f2;
+  margin-top: var(--space-upside-default);
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 0px var(--space-side-default);
+}
