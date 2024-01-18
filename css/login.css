@@ -1,0 +1,101 @@
+*{
+  margin: 0rem;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+header{
+  margin: auto;
+  height: 9.375rem;
+  background-color: #94c500;
+  display: flex;
+  align-items: center;
+}
+.logo{
+  font-size:2rem;
+  padding-left: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.body{
+  height: fit-content;
+  display: flex;
+  height: 13rem;
+  width: 20%;
+  margin: auto;
+  display: flex;
+  
+}
+.body_left, .body_right{
+  width: 50%;
+  justify-content: flex-start;
+  text-align: center;
+  flex-direction: row;
+}
+span{
+  color: white;
+  font-weight: 800;
+}
+h1{
+  color: white;
+  font-weight: 800;
+  padding-left: 5rem;
+}
+.body-left>ul{
+  height: 31.25rem;
+  /* margin: auto; */
+  text-align:right;
+  padding-top: 3.125rem;
+  list-style: none;
+}
+.body-right>ul{
+  height: 31.25rem;
+  /* margin: auto; */
+  text-align: left;
+  padding-top: 3.125rem;
+  list-style: none;
+}
+.body-bottom{
+  width: 100% auto;
+  text-align: center;
+  height: 21rem;
+}
+li, button{
+  margin: auto;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+.email-container li:first-child{
+  display:flex ;
+  justify-content: flex-start;
+}
+.email-container li:last-child{
+  display:flex ;
+  justify-content: flex-start;
+}
+.password-container li:last-child{
+  display: flex;
+  justify-content: flex-end;
+}
+.find-password{
+  color: #80924a;
+}
+footer {
+  background-color: #706c6c;
+  margin-top: var(--space-upside-default);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-text {
+  margin: 0px;
+}
+
+@media screen and (max-width: 425px) {
+
+}
+
