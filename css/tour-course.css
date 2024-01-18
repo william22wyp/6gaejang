@@ -47,14 +47,67 @@ main {
 }
 
 #rooms_list{
+  list-style: none;
+  padding: 0;
   width: 100%;
   height: 200px;
-  border: 1px solid;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: row;
 }
 
+.room_card {
+  /* float: left; */
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.room_card__img{
+  width: 100%;
+  height: 100%;
+  float: left;
+  z-index: 5;
+}
+
+.room_card__text{
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: all 0.6s ease-in;
+  z-index: 10;
+}
+
+.room_card__text > h1 {
+  display: inline-block;
+  font-size: 25px;
+}
+
+.room_card__text > p {
+  font-size: 15px;
+}
+
+.room_card:hover{
+  transform: translateY(-10px);
+}
+
+.room_card:hover .room_card__text {
+  opacity: 1;
+}
+
+/* 예매 버튼 */
 #form_mobile {
   display: none;
 }
+
 
 /* 예매창 */
 .rsv_container {
@@ -164,16 +217,37 @@ main {
     border: 1px solid;
   }
 
+  /* 숙소 */
   #rooms_info {
     margin-top: 30px;
   }
 
   #rooms_list{
+    list-style: none;
+    padding: 0;
     width: 100%;
-    height: 200px;
+    height: 500px;
     border: 1px solid;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .room_card__text > h1 {
+    font-size: 20px;
+  }
+
+  .room_card__text > p {
+    font-size: 11px;
+  }
+
+  .room_card {
+    overflow: hidden;
+    margin: 10px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
   }
   
+  /* 예매버튼 */
   #form_mobile {
     width: 100%;
     display: block;
@@ -198,6 +272,5 @@ main {
   .rsv_container {
     display: none;
   }
-
 
 }
