@@ -22,6 +22,7 @@ body {
 .book-container h3 {
   text-align: center;
   margin: 16px;
+  margin-bottom: 64 px;
 }
 
 .book-container label {

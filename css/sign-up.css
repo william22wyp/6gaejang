@@ -5,15 +5,17 @@ body {
   margin: 0;
 }
 
-li, h3{
+li,
+h3 {
   text-align: center;
   list-style: none;
 }
 
 .header {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 200px;
+  height: 120px;
   margin: 0;
   background-color: var(--color-bright-violet);
   position: relative;
@@ -41,8 +43,8 @@ li, h3{
   padding: 5px;
 }
 
-.robot{
-  border: 1px solid ;
+.robot {
+  border: 1px solid;
   /* width: fit-content; */
 
   /* padding: 10px 100px 25px 100px;
@@ -52,37 +54,35 @@ li, h3{
   font-size: large;
 }
 
-.sign-up{
+.sign-up {
   text-align-last: center;
   /* width: 150px; */
   display: grid;
-  grid-template-columns: 1fr
-  
+  grid-template-columns: 1fr;
 }
-input[type="checkbox"]{
-
+input[type="checkbox"] {
   width: 20px;
   height: 20px;
 }
-.phone{
+.phone {
   padding: 40px;
   margin: 20px;
   display: grid;
 }
-.usre-name{
+.usre-name {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-img{
+img {
   object-fit: cover;
 }
-.border{
+.border {
   width: 0px;
 }
-.login{
+.login {
   text-align-last: center;
 }
-.img-a{
+.img-a {
   object-fit: cover;
   padding: 1px 1px 1px 100px;
 }

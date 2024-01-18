@@ -1,21 +1,9 @@
+@import "./var.css";
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
-img{
-  object-fit:cover;
-}
-
-:root {
-  --color-green: #94c500;
-  --space-side-default: 16px;
-  --space-upside-default: 32px;
-  --space-side-mobile: 8px;
-  --font-size-mid: 24px;
-  --font-size-small: 16px;
-}
-
 /* main */
 main {
   display: flex;
@@ -23,76 +11,78 @@ main {
   align-items: center;
 }
 
-@media screen and (max-width: 425px) {
-  .input-container {
-    width: 80%;
-  }
+.title {
+  margin-top: 32px;
+  width: 80%;
+  border-bottom: 1px solid var(--color-bright-green);
+  border-width: 4px;
+  padding-bottom: 4px;
 }
-.tour-course-container{
-  transition: 2s ease-in;
-}
-.container {
-  width: 700px;
+
+.course-container {
+  margin: 16px 0px;
+  width: 80%;
   height: 500px;
   display: grid;
-  background-color:brown;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.container:hover {
-  animation: name 6s ease-in-out infinite;
+.course-container:hover {
+  animation-name: stretch-pc;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
-@keyframes name {
+@keyframes stretch-pc {
   0% {
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   25% {
-    grid-template-columns: 2fr 1fr 1fr ;
+    grid-template-columns: 2fr 1fr 1fr;
   }
   50% {
-    grid-template-columns: 1fr 2fr 1fr ;
+    grid-template-columns: 1fr 2fr 1fr;
   }
   75% {
-    grid-template-columns: 1fr 1fr 2fr ;
+    grid-template-columns: 1fr 1fr 2fr;
   }
   100% {
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 #cosa {
-  background-color:bisque;
-  background:url("../img/tour-course1/place1.jpg");
+  background-color: bisque;
+  background: url("../img/tour-course1/place1.jpg");
   background-position: left;
 }
+
 #cosb {
   background-color: blueviolet;
-  background:url("../img/tour-course2/place2.jpg") no-repeat;
+  background: url("../img/tour-course2/place2.jpg") no-repeat;
   background-position: left;
   background-size: cover;
 }
 #cosc {
-  background-color:blue;
+  background-color: blue;
   background: url("../img/tour-course3/place2.jpg") no-repeat;
   background-size: cover;
 }
-.items h3{
+
+.items h3 {
   color: white;
   font-size: 24px;
   margin-bottom: 15px;
-
-
 }
-.items p{
+.items p {
   color: white;
-
 }
-.items{
+.items {
   display: flex;
   align-items: center;
-
 }
-.items a{
+.items a {
   height: 300px;
   width: 100%;
   background-color: rgb(1, 1, 1, 0.4);
@@ -100,4 +90,116 @@ main {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+.theme-container {
+  margin: var(--space-upside-default) var(--space-side-default);
+  width: 80%;
+  height: 200px;
+
+  display: grid;
+  grid-template-columns: repeat(4, minmax(80px, 1fr));
+}
+
+.theme-container .items {
+  border-radius: 8px;
+  background-color: blueviolet;
+  border: 2px solid rgb(1, 1, 1, 0.2);
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+
+  transition: border 0.5s ease-in-out;
+}
+
+.theme-image {
+  width: 32px;
+  height: 32px;
+  background: url("https://picsum.photos/200");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.theme-container .items span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.theme-container .items:hover {
+  border: 4px solid slateblue;
+  animation: shrink 1s ease-in forwards;
+}
+
+@keyframes shrink {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.96);
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .input-container {
+    width: 80%;
+  }
+
+  .theme-container {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+  }
+  .theme-image {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+  .theme-container .items span {
+    font-size: 8px;
+  }
+
+  .theme-container {
+    height: 400px;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .course-container {
+    height: 500px;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .course-container .items a {
+    height: 100px;
+  }
+
+  #cosa,
+  #cosb,
+  #cosc {
+    background-position: top;
+  }
+
+  .course-container:hover {
+    animation-name: stretch-mobile;
+  }
+}
+
+@keyframes stretch-mobile {
+  0% {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  25% {
+    grid-template-rows: 2fr 1fr 1fr;
+  }
+  50% {
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+  75% {
+    grid-template-rows: 1fr 1fr 2fr;
+  }
+  100% {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }

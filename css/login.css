@@ -65,7 +65,7 @@ h1 {
 .body-bottom {
   width: 100% auto;
   text-align: center;
-  height: 21rem;
+  margin-bottom: 32px;
 }
 li,
 button {
@@ -89,20 +89,9 @@ button {
 .find-password {
   color: var(--color-bright-green);
 }
-footer {
-  background-color: #706c6c;
-  margin-top: var(--space-upside-default);
-  height: 4rem;
-  display: flex;
-  align-items: center;
-}
-
-.footer-text {
-  margin: 0px;
-}
 
 @media screen and (max-width: 425px) {
-  .header{
+  .header {
     margin: 0;
   }
 
@@ -119,23 +108,24 @@ footer {
   }
 }
 
+ul input:not([type="radio"]):hover {
+  border-color: var(--color-light-green);
+}
+li input:checked + label {
+  color: red;
+  font-weight: bold;
+}
+li .find-password:hover {
+  font-weight: bold;
+}
+div button:hover {
+  color: red;
+}
+div .member:hover {
+  color: red;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
-}
-ul input:not([type=radio]):hover{
-  border-color: var(--color-light-green);
-}
-li input:checked +label {
-  color: red;
-  font-weight: bold;
-}
-li .find-password:hover{
-  font-weight: bold;
-}
-div button:hover{
-  color: red;
-}
-div .member:hover{
-  color: red;
 }
