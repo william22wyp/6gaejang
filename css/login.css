@@ -114,3 +114,19 @@ footer {
   position: absolute;
   bottom: 0;
 }
+ul input:not([type=radio]):hover{
+  border-color: rgb(8, 251, 48);
+}
+li input:checked +label {
+  color: red;
+  font-weight: bold;
+}
+li .find-password:hover{
+  font-weight: bold;
+}
+div button:hover{
+  color: rgb(243, 11, 11);
+}
+div .member:hover{
+  color: rgb(219, 15, 76);
+}
