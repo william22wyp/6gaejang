@@ -127,6 +127,7 @@ main {
 .theme-container .items span {
   font-size: 14px;
   font-weight: 600;
+  color: black;
 }
 
 .theme-container .items:hover {
