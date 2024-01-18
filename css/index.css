@@ -31,17 +31,45 @@ main {
 .tour-course-container{
   transition: 2s ease-in;
 }
-    .container {
-      margin: var(--space-upside-default) var(--space-side-default);
-      width: 400px;
-      height: 540px;
-      background-color: salmon;
-      overflow: hidden;
-      position: relative;
-    }
-    .itme{
-      display: grid;
-      grid-template-columns:(4 1fr);
-    }
-    
-    
+.container {
+  width: 800px;
+  height: 400px;
+  display: grid;
+  background-color:brown;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container:hover {
+  animation: name 4s ease-in-out infinite;
+}
+
+@keyframes name {
+  0% {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+  25% {
+    grid-template-columns: 2fr 1fr 1fr ;
+  }
+  50% {
+    grid-template-columns: 1fr 2fr 1fr ;
+  }
+  75% {
+    grid-template-columns: 1fr 1fr 2fr ;
+  }
+  100% {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+#cosa {
+  background-color:bisque;
+  background:url("../img/#date")
+
+}
+#cosb {
+  background-color: blueviolet;
+ 
+}
+#cosc {
+  background-color:blue;
+
+}
