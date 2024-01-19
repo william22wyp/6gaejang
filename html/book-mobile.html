@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/book-mobile.css" />
-    <title>Document</title>
+    <title>어디가개?</title>
   </head>
   <body>
     <main>
       <form action="#" class="book-form">
         <div class="book-container">
           <h3>예매하기</h3>
-          <label for="course">투어 코스 선택</label>
+          <label course-labelfor="course">투어 코스 선택</label>
           <select name="course" id="course">
             <option value="1">course1</option>
             <option value="2">course2</option>
@@ -26,6 +26,16 @@
             <option value="4">acc4</option>
           </select>
         </div>
+        <div class="book-info-container">
+          <div class="book-info-container__start">
+            <label for="people">인원</label>
+            <input type="number" id="people" />
+          </div>
+          <div class="book-info-container__end">
+            <label for="date">날짜</label>
+            <input type="date" id="date" />
+          </div>
+        </div>
         <div class="submit-container">
           <div class="submit-container__start">
             <button>문의하기</button>
@@ -37,5 +47,11 @@
         </div>
       </form>
     </main>
+    <iframe
+      src="../html/components/footer.html "
+      frameborder="0"
+      width="100%"
+      height="96px"
+    ></iframe>
   </body>
 </html>
